@@ -1,0 +1,17 @@
+require('ts-node').register({
+    transpileOnly: true,
+    compilerOptions: {
+      module: 'CommonJS',
+      esModuleInterop: true
+    }
+  })
+  
+  const path = require('path')
+  
+  module.exports = {
+    'config': path.resolve(__dirname, 'server/src/config/config.ts'),
+    'models-path': path.resolve(__dirname, 'server/src/models'),
+    'migrations-path': path.resolve(__dirname, 'server/src/migrations'),
+    'seeders-path': path.resolve(__dirname, 'server/src/seeders')
+  }
+  
