@@ -6,7 +6,7 @@
     "start:dev": "concurrently \"npm run server:dev\" \"wait-on tcp:3001 && npm run client:dev\"",
     "server:dev": "cd server && npm run dev",
     "client:dev": "cd client && npm run dev",
-    "build": "cd client && npm ci && npm run build && cd ../server && npm ci && npm run build",
+    "build": "npm install && cd client && npm install && npm run build && cd ../server && npm install && npm run build",
     "start": "cd server && npm start"
   },
   "dependencies": {
