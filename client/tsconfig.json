@@ -1,20 +1,19 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "useDefineForClassFields": true,
-    "lib": ["DOM", "DOM.Iterable", "ESNext"],
-    "allowJs": false,
-    "skipLibCheck": true,
-    "esModuleInterop": false,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
     "module": "ESNext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx"
+    "moduleResolution": "Node",
+    "jsx": "react-jsx",
+    "allowJs": false,
+    "checkJs": false,
+    "strict": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "noEmit": true,               /* <-- don’t emit any files */
+    "isolatedModules": true       /* <-- required for transpile‐only tools like Vite */
   },
-  "include": ["src", "src/vite-env.d.ts"]
+  "include": ["src"],  
+  "exclude": ["node_modules", "dist"]
 }
