@@ -1,0 +1,9 @@
+# render.yaml
+services:
+  - type: web
+    name: krazy-kanban
+    env: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    preDeployCommand: cd server && npm run db:migrate && npm run db:seed
