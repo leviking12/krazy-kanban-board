@@ -10,7 +10,11 @@
     "start": "cd server && npm start"
   },
   "dependencies": {
+    "bcryptjs": "^3.0.2",
     "concurrently": "^7.6.0",
     "wait-on": "^7.0.1"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6"
   }
 }
