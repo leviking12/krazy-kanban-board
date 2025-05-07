@@ -1,9 +1,7 @@
-# render.yaml
 services:
   - type: web
     name: krazy-kanban
     env: node
-    plan: free
     buildCommand: npm install && npm run build
     startCommand: npm start
-    preDeployCommand: cd server && npm run db:migrate && npm run db:seed
+    preDeployCommand: cd server && npx sequelize-cli db:migrate --env production && npx sequelize-cli db:seed:all --env production
