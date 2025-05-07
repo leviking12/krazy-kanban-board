@@ -50,3 +50,5 @@ A full-stack Kanban board application secured with JSON Web Tokens (JWT). Users 
 
 
 ![Screen Shot!!](image.png)
+
+<video controls src="2025-05-07 00-10-24.mp4" title="Title"></video>
