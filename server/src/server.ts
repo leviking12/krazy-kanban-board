@@ -4,8 +4,8 @@ dotenv.config()
 import path from 'path'
 import express, { Request, Response } from 'express'
 import { fileURLToPath } from 'url'
-import routes from './routes/index'
-import { sequelize } from './models/index'
+import routes from './routes/index.js'
+import { sequelize } from './models/index.js'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
